@@ -1,0 +1,36 @@
+# Auto-detect text files and perform LF normalization
+*          text=auto
+
+# Python source
+*.py       text eol=lf diff=python
+
+# Notebooks
+*.ipynb    text eol=lf
+
+# YAML / config files
+*.yaml     text eol=lf
+*.yml      text eol=lf
+*.json     text eol=lf
+*.toml     text eol=lf
+*.cfg      text eol=lf
+*.ini      text eol=lf
+
+# Documentation
+*.md       text eol=lf
+*.rst      text eol=lf
+*.txt      text eol=lf
+
+# Shell scripts
+*.sh       text eol=lf
+
+# CSV data files (treat as text for diffs, but large ones belong in DVC)
+*.csv      text eol=lf
+
+# Binary – model artefacts (use DVC for large files)
+*.joblib   binary
+*.pkl      binary
+*.h5       binary
+*.onnx     binary
+*.pt       binary
+*.pth      binary
+*.pb       binary

@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# MLOps – model artefacts (store with DVC instead)
+models/*.joblib
+models/*.pkl
+models/*.h5
+models/*.onnx
+models/*.pt
+models/*.pth
+models/*.pb
+
+# MLOps – metrics and datasets generated locally
+models/metrics.json
+data/raw/*.csv
+data/processed/*.csv
+
+# DVC
+.dvc/cache/
+.dvc/tmp/
